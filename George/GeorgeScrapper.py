@@ -1,3 +1,4 @@
+"""Manage Website Interaction with Goerge website."""
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -93,7 +94,9 @@ class GeorgeAccount:
             trans_amount = transaction_string_list[3]
         trans_account = self.bank_name+self.account
         trans_category = trans_description
-        return ([trans_account, trans_date, trans_amount, trans_counterpart, trans_description, trans_category])
+        trans_FX_curr = "EUR"
+        trans_FX_rate = 1.0
+        return ([trans_account, trans_date, trans_amount, trans_counterpart, trans_description, trans_category, trans_FX_curr, trans_FX_rate, False, False])
 
     def __check_date(self, transaction_string_list, delta_days=3):
         """Check that the transaction is before a certain date in relation to today."""
@@ -108,7 +111,8 @@ class GeorgeAccount:
             # print(check_date_bol)
         return(check_date_bol)
 
-    def get_transactions(self,  delta_days=3, account= 0):
+    def get_transactions(self,  delta_days=3, account=0):
+        """Get a list of transactions fom account from the website."""
         self.account = str(account)
         """Return a lis of transaction earlier than the given date."""
         self.browser.find_element_by_xpath("(//a[contains(text(),'Christian T.A.P.Brenninkmeijer Marc')])[2]").click()

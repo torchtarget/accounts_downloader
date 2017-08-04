@@ -13,8 +13,8 @@ bank_config = ConfigObj("banks_config.ini")
 sqlite_file = bank_config['sqlite_file']
 
 
-def get_bank_info (bank_name):
-    """Setup bank data."""
+def get_bank_info(bank_name):
+    """Parse Config File and get Bank Data."""
     bank_user = bank_config['Banks'][bank_name]['Username']
     bank_url = bank_config['Banks'][bank_name]['Url']
     try:
@@ -32,7 +32,9 @@ def get_bank_info (bank_name):
         pass
     return({"url": bank_url, "user": bank_user, "pass1": bank_password1, "pass2": bank_password2})
 
+
 def output_saldo(account_saldo):
+    """Output the balances to a file"""
     # saldo_euro= c.convert(account_saldo["currency"], 'EUR', account_saldo["saldo"])
     saldo_euro = 1
     with open(saldo_file, "a") as output_file:
