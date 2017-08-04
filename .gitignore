@@ -1,4 +1,6 @@
 Test.py
 Test2.py
-config.txt
+*config.txt
 *config.py
+*config.ini
+*.sql
