@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import StaleElementReferenceException
 from datetime import date, timedelta
-
+import csv
 
 # import time
 import re
@@ -25,10 +25,12 @@ class GeorgeAccount:
         self.user = bank_info['user']
         self.password1 = bank_info['pass1']
         self.password2 = bank_info['pass2']
-        self.url = bank_info['url']
+        self.url = "https://login.sparkasse.at/sts/oauth/authorize?response_type=token&client_id=georgeclient"
         self.george_open = False
         self.account = str(0)
         self.bank_name = "George"
+        self.category_map_filename = 'GeorgeCategoryMap.csv'
+
         print(self.url)
 
     def opensite(self):
@@ -56,18 +58,16 @@ class GeorgeAccount:
         """Get the account amount (user needs to know which account)."""
         account_saldo_raw = self.browser.find_elements_by_xpath('//div[@class="col-sm-3 col-xs-4 amountColumn"]')[account].text
         account_saldo_raw = account_saldo_raw.split('\n', 1)[0]
-        print(account_saldo_raw[2])
         if (account_saldo_raw[2] == "-"):
             account_negative = -1
         else:
             account_negative = 1
 
-            account_saldo_float = (float(''.join(re.findall('\d+', account_saldo_raw)))/100)*account_negative
-            account_saldo_str = str(account_saldo_float)
-            print(account_saldo_raw)
-            account_currency = "EUR"
-            saldo_return = {"bank": "George"+str(account), "saldo": account_saldo_str, "currency": account_currency}
-            return(saldo_return)
+        account_saldo_float = (float(''.join(re.findall('\d+', account_saldo_raw)))/100)*account_negative
+        account_saldo_str = str(account_saldo_float)
+        account_currency = "EUR"
+        saldo_return = {"bank": "George"+str(account), "saldo": account_saldo_str, "currency": account_currency}
+        return(saldo_return)
 
     def __transaction_getstring(self, trans_no=0):
         """Select the transaction string."""
@@ -81,6 +81,21 @@ class GeorgeAccount:
                 pass
             return(transaction_string)
 
+    def __get_category(self, trans_description):
+        """Get a category."""
+        # reader = csv.DictReader(open(self.category_map_filename, 'r'))
+        reader = csv.DictReader(open('George/GeorgeCategoryMap.csv', 'r'))
+        new_category = "Uncategorized"
+        old_category = ""
+        new_trans_description = trans_description
+        for line in reader:
+            if (line['Original'] in trans_description):
+                new_category = line['Mapped']
+                old_category = line['Original']
+                new_trans_description = trans_description.replace(line['Original'], '')
+                break
+        return({'new': new_category, 'old': old_category, 'description': new_trans_description})
+
     def __parse_transaction(self, transaction_string_list):
         """Return a clearer transaction sting."""
         trans_date = date(2017, self.de_mon_to_num[transaction_string_list[1]], int(transaction_string_list[0]))
@@ -93,10 +108,16 @@ class GeorgeAccount:
             trans_description = transaction_string_list[2]
             trans_amount = transaction_string_list[3]
         trans_account = self.bank_name+self.account
-        trans_category = trans_description
+
+        trans_categorys = self.__get_category(trans_description)
+        trans_category = trans_categorys['new']
+        trans_description = trans_categorys['description']
+        # Ensure orignnal category info is stored in the memo field
+        trans_memo = trans_categorys['old']
+
         trans_FX_curr = "EUR"
         trans_FX_rate = 1.0
-        return ([trans_account, trans_date, trans_amount, trans_counterpart, trans_description, trans_category, trans_FX_curr, trans_FX_rate, False, False])
+        return ([trans_account, trans_date, trans_amount, trans_counterpart, trans_description, trans_memo, trans_category, trans_FX_curr, trans_FX_rate, False, False])
 
     def __check_date(self, transaction_string_list, delta_days=3):
         """Check that the transaction is before a certain date in relation to today."""
@@ -115,9 +136,24 @@ class GeorgeAccount:
         """Get a list of transactions fom account from the website."""
         self.account = str(account)
         """Return a lis of transaction earlier than the given date."""
-        self.browser.find_element_by_xpath("(//a[contains(text(),'Christian T.A.P.Brenninkmeijer Marc')])[2]").click()
+
+        if(account == 1):
+            try:
+                myElem = WebDriverWait(self.browser, self.delay).until(EC.presence_of_element_located((By.LINK_TEXT, "Christian T.A.P.Brenninkmeijer")))
+            except TimeoutException:
+                print("Loading took too much time!")
+            self.browser.find_element_by_link_text("Christian T.A.P.Brenninkmeijer").click()
+        elif(account == 2):
+            try:
+                myElem = WebDriverWait(self.browser, self.delay).until(EC.presence_of_element_located((By.LINK_TEXT, "422093XXXXXX0412")))
+            except TimeoutException:
+                print("Loading took too much time!")
+            self.browser.find_element_by_link_text("422093XXXXXX0412").click()
+        else:
+            self.browser.find_element_by_xpath("(//a[contains(text(),'Christian T.A.P.Brenninkmeijer Marc')])[2]").click()
         try:
             myElem = WebDriverWait(self.browser, self.delay).until(EC.presence_of_element_located((By.ID, "transactions")))
+
             print("Page is ready!")
         except TimeoutException:
             print("Loading took too much time!")
@@ -134,5 +170,10 @@ class GeorgeAccount:
                 print("I got here line 131")
                 in_date_range = False
             i = i+1
-        print(transaction_list[1])
+        self.browser.find_element_by_css_selector("a.iconlink").click()
+        try:
+            myElem = WebDriverWait(self.browser, self.delay).until(EC.presence_of_element_located((By.ID, "accountName")))
+            print("Page is ready!")
+        except TimeoutException:
+            print("Loading took too much time!")
         return transaction_list

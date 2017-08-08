@@ -9,17 +9,15 @@ import sql_transactions
 from forex_python.converter import CurrencyRates
 
 # date and time representation
-
+saldo_file = "/tmp/saldo.txt"
 bank_config = ConfigObj("banks_config.ini")
-saldo_file = bank_config['saldo_file']
 sqlite_file = bank_config['sqlite_file']
-no_days_trans = 4
 
 
 def get_bank_info(bank_name):
     """Parse Config File and get Bank Data."""
     bank_user = bank_config['Banks'][bank_name]['Username']
-    no_accounts = int(bank_config['Banks'][bank_name]['Accounts'])
+    bank_url = bank_config['Banks'][bank_name]['Url']
     try:
         bank_password1 = bank_config['Banks'][bank_name]['Password']
     except:
@@ -33,7 +31,7 @@ def get_bank_info(bank_name):
     except:
         bank_password2 = None
         pass
-    return({"user": bank_user, "pass1": bank_password1, "pass2": bank_password2, "no_accounts": no_accounts})
+    return({"url": bank_url, "user": bank_user, "pass1": bank_password1, "pass2": bank_password2})
 
 
 def output_saldo(account_saldo):
@@ -47,36 +45,10 @@ def output_saldo(account_saldo):
 
 santander_open = False
 c = CurrencyRates()
-browser = webdriver.Firefox()
+browser = None
 bank_info = get_bank_info('George')
 print(bank_info)
 george = George.GeorgeScrapper.GeorgeAccount(browser, bank_info)
-trans_db = sql_transactions.Accounts_SQL(sqlite_file)
-
-
-if (george.opensite()):
-    i = 2
-    while(i < bank_info['no_accounts']):
-        mysaldo = george.get_Saldo(i)
-        print(mysaldo)
-        output_saldo(mysaldo)
-        trans_list = george.get_transactions(no_days_trans, i)
-        for trans in trans_list:
-            if(trans_db.match_transaction(trans) is False):
-                print("Transaction not matched _ inserting")
-                trans_db.insert_transaction(trans)
-            else:
-                print("Transaction Matched")
-        i = i+1
-browser.quit()
-
-
-#with open(saldo_file, "w") as output_file:
-#        output_file.write("Report: " + time.strftime("%c")+"\n")
-
-#santander_open=Santander.SantanderOpen.opensite(browser)
-#if(santander_open):
-#     mysaldo=Santander.SantanderOpen.get_Saldo(browser,0)
-#     output_saldo(mysaldo)
-
-#george_open = George.GeorgeScrapper.opensite(browser)
+monkey = george.get_category("ÖFFIS & TAXImit Karte 1 am 7. Aug. um 17:53")
+print(monkey)
+#browser.quit()
