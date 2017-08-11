@@ -3,6 +3,7 @@ from configobj import ConfigObj
 from selenium import webdriver
 # import Santander.SantanderOpen
 import George.GeorgeScrapper
+import ICS.ICSScraper
 import sql_transactions
 
 
@@ -47,6 +48,12 @@ def output_saldo(account_saldo):
 
 santander_open = False
 c = CurrencyRates()
+
+bank_info = get_bank_info('ICS')
+ics = ICS.ICSScraper.ICSBank(bank_info)
+ics_saldo = ics.get_Saldo()
+output_saldo(ics_saldo)
+print(ics_saldo)
 browser = webdriver.Firefox()
 bank_info = get_bank_info('George')
 print(bank_info)
@@ -55,7 +62,7 @@ trans_db = sql_transactions.Accounts_SQL(sqlite_file)
 
 
 if (george.opensite()):
-    i = 2
+    i = 0
     while(i < bank_info['no_accounts']):
         mysaldo = george.get_Saldo(i)
         print(mysaldo)

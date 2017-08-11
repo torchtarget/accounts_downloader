@@ -2,9 +2,10 @@
 from configobj import ConfigObj
 from selenium import webdriver
 # import Santander.SantanderOpen
-import George.GeorgeScrapper
+#import George.GeorgeScrapper
 import sql_transactions
-
+#import ICS.ICSScraper
+import HSBC.HSBCScraper
 
 from forex_python.converter import CurrencyRates
 
@@ -17,7 +18,7 @@ sqlite_file = bank_config['sqlite_file']
 def get_bank_info(bank_name):
     """Parse Config File and get Bank Data."""
     bank_user = bank_config['Banks'][bank_name]['Username']
-    bank_url = bank_config['Banks'][bank_name]['Url']
+
     try:
         bank_password1 = bank_config['Banks'][bank_name]['Password']
     except:
@@ -31,7 +32,7 @@ def get_bank_info(bank_name):
     except:
         bank_password2 = None
         pass
-    return({"url": bank_url, "user": bank_user, "pass1": bank_password1, "pass2": bank_password2})
+    return({"user": bank_user, "pass1": bank_password1, "pass2": bank_password2})
 
 
 def output_saldo(account_saldo):
@@ -43,12 +44,18 @@ def output_saldo(account_saldo):
     return
 
 
-santander_open = False
-c = CurrencyRates()
-browser = None
-bank_info = get_bank_info('George')
+bank_info = get_bank_info('HSBC')
 print(bank_info)
-george = George.GeorgeScrapper.GeorgeAccount(browser, bank_info)
-monkey = george.get_category("ÖFFIS & TAXImit Karte 1 am 7. Aug. um 17:53")
-print(monkey)
+browser = webdriver.Firefox()
+hsbc = HSBC.HSBCScraper.HSBCAccount(browser, bank_info)
+hsbc.opensite()
+mysaldo = hsbc.get_Saldo(0)
+#trans_db = sql_transactions.Accounts_SQL(sqlite_file)
+
+    #mysaldo = george.get_Saldo(i)
+#        print(mysaldo)#
+# output_saldo(mysaldo)
+
+
+#print(monkey)
 #browser.quit()
