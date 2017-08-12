@@ -4,3 +4,5 @@ Test2.py
 *config.py
 *config.ini
 *.sql
+*saldo*
+*.sqlite3

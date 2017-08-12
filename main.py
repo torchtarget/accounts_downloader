@@ -3,20 +3,24 @@ from configobj import ConfigObj
 from selenium import webdriver
 # import Santander.SantanderOpen
 import George.GeorgeScrapper
+import ICS.ICSScraper
 import sql_transactions
+
 
 from forex_python.converter import CurrencyRates
 
 # date and time representation
-saldo_file = "/tmp/saldo.txt"
+
 bank_config = ConfigObj("banks_config.ini")
+saldo_file = bank_config['saldo_file']
 sqlite_file = bank_config['sqlite_file']
+no_days_trans = 4
 
 
 def get_bank_info(bank_name):
     """Parse Config File and get Bank Data."""
     bank_user = bank_config['Banks'][bank_name]['Username']
-    bank_url = bank_config['Banks'][bank_name]['Url']
+    no_accounts = int(bank_config['Banks'][bank_name]['Accounts'])
     try:
         bank_password1 = bank_config['Banks'][bank_name]['Password']
     except:
@@ -30,11 +34,11 @@ def get_bank_info(bank_name):
     except:
         bank_password2 = None
         pass
-    return({"url": bank_url, "user": bank_user, "pass1": bank_password1, "pass2": bank_password2})
+    return({"user": bank_user, "pass1": bank_password1, "pass2": bank_password2, "no_accounts": no_accounts})
 
 
 def output_saldo(account_saldo):
-    """Output the balances to a file"""
+    """Output the balances to a file."""
     # saldo_euro= c.convert(account_saldo["currency"], 'EUR', account_saldo["saldo"])
     saldo_euro = 1
     with open(saldo_file, "a") as output_file:
@@ -42,9 +46,14 @@ def output_saldo(account_saldo):
     return
 
 
-
 santander_open = False
 c = CurrencyRates()
+
+bank_info = get_bank_info('ICS')
+ics = ICS.ICSScraper.ICSBank(bank_info)
+ics_saldo = ics.get_Saldo()
+output_saldo(ics_saldo)
+print(ics_saldo)
 browser = webdriver.Firefox()
 bank_info = get_bank_info('George')
 print(bank_info)
@@ -52,15 +61,20 @@ george = George.GeorgeScrapper.GeorgeAccount(browser, bank_info)
 trans_db = sql_transactions.Accounts_SQL(sqlite_file)
 
 
-
 if (george.opensite()):
-    mysaldo = george.get_Saldo(0)
-    trans_list = george.get_transactions(4)
-    print(mysaldo)
-    trans_db.insert_transaction(trans_list[1])
-
-
-
+    i = 0
+    while(i < bank_info['no_accounts']):
+        mysaldo = george.get_Saldo(i)
+        print(mysaldo)
+        output_saldo(mysaldo)
+        trans_list = george.get_transactions(no_days_trans, i)
+        for trans in trans_list:
+            if(trans_db.match_transaction(trans) is False):
+                print("Transaction not matched _ inserting")
+                trans_db.insert_transaction(trans)
+            else:
+                print("Transaction Matched")
+        i = i+1
 browser.quit()
 
 
