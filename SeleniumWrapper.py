@@ -10,4 +10,5 @@ from selenium.common.exceptions import NoAlertPresentException
 class SeleniumWrapper:
     """Wrap selenoim"""
     def __init__(self):
-        self.driver = webdriver.Firefox()
+        self.browser = webdriver.Firefox()
+

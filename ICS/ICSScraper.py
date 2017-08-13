@@ -1,7 +1,10 @@
 ##! /usr/bin/python3
-import requests
-from bs4 import BeautifulSoup
 import re
+
+from bs4 import BeautifulSoup
+import requests
+
+
 class ICSBank:
     """Object gets ICS Data."""
 

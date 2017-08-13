@@ -1,14 +1,15 @@
 ##! /usr/bin/python3
-from configobj import ConfigObj
-from selenium import webdriver
-# import Santander.SantanderOpen
-#import George.GeorgeScrapper
-import sql_transactions
-#import ICS.ICSScraper
 import HSBC.HSBCScraper
 
-from forex_python.converter import CurrencyRates
+from configobj import ConfigObj
+#from forex_python.converter import CurrencyRates
+from selenium import webdriver
+import sql_transactions
 
+
+# import Santander.SantanderOpen
+#import George.GeorgeScrapper
+#import ICS.ICSScraper
 # date and time representation
 saldo_file = "/tmp/saldo.txt"
 bank_config = ConfigObj("banks_config.ini")

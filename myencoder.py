@@ -1,6 +1,8 @@
 import codecs
-import pickle
 import os
+import pickle
+
+
 # passfile = open('coffee.exe', 'wb')
 # passlist={'Hello':'Monkeys'}
 keyfile = "/tmp/scan.exe"

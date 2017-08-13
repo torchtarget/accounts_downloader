@@ -1,26 +1,26 @@
 """Manage Website Interaction with HSBC."""
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import TimeoutException
+
+import SeleniumWrapper
+
 
 
 # from selenium.common.exceptions import StaleElementReferenceException
 # from datetime import date, timedelta
 # import csv
 # import re
-
 # from selenium.webdriver.common.keys import Keys
-
-
 class HSBCAccount():
     """HSCBAccount Class."""
 
     delay = 10
 
-    def __init__(self, browser, bank_info):
+    def __init__(self, webwrapper, bank_info):
         """Define all variable to access George Site."""
-        self.browser = browser
+        
         self.user = bank_info['user']
         self.password1 = bank_info['pass1']
         self.password2 = bank_info['pass2']
@@ -29,7 +29,9 @@ class HSBCAccount():
         self.account = str(0)
         self.bank_name = "HSBC"
         self.category_map_filename = 'HSBCCategoryMap.csv'
-
+        self.webwrapper=webwrapper
+        self.browser= webwrapper.browser
+        
     def opensite(self):
         """Open website and place browser on  accounts page."""
         self.browser.get(self.url)
