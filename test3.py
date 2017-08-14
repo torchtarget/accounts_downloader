@@ -1,16 +1,15 @@
 ##! /usr/bin/python3
 import HSBC.HSBCScraper
-
 from configobj import ConfigObj
-#from forex_python.converter import CurrencyRates
-from selenium import webdriver
 import sql_transactions
+from webdriverwrapper.wrapper import Firefox
 
 
 # import Santander.SantanderOpen
 #import George.GeorgeScrapper
 #import ICS.ICSScraper
 # date and time representation
+
 saldo_file = "/tmp/saldo.txt"
 bank_config = ConfigObj("banks_config.ini")
 sqlite_file = bank_config['sqlite_file']
@@ -45,12 +44,14 @@ def output_saldo(account_saldo):
     return
 
 
+browser = Firefox()
+
 bank_info = get_bank_info('HSBC')
-print(bank_info)
-browser = webdriver.Firefox()
+#print(bank_info)
 hsbc = HSBC.HSBCScraper.HSBCAccount(browser, bank_info)
-hsbc.opensite()
-mysaldo = hsbc.get_Saldo(0)
+#hsbc.opensite()
+#mysaldo = hsbc.get_Saldo(0)
+#print(mysaldo)
 #trans_db = sql_transactions.Accounts_SQL(sqlite_file)
 
     #mysaldo = george.get_Saldo(i)
