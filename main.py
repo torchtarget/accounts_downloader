@@ -1,11 +1,11 @@
 ##! /usr/bin/python3
+import HSBC.HSBCScraper
 from configobj import ConfigObj
 from selenium import webdriver
-# import Santander.SantanderOpen
 import George.GeorgeScrapper
 import ICS.ICSScraper
 import sql_transactions
-
+# import Santander.SantanderOpen
 
 from forex_python.converter import CurrencyRates
 

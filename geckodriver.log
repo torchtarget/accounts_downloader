@@ -1,0 +1,550 @@
+1502747237267	geckodriver	INFO	geckodriver 0.18.0
+1502747237269	geckodriver	INFO	Listening on 127.0.0.1:37951
+1502747238511	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502747239394	Marionette	INFO	Listening on port 37439
+1502747239490	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+1502747468203	geckodriver	INFO	geckodriver 0.18.0
+1502747468206	geckodriver	INFO	Listening on 127.0.0.1:36479
+1502747469342	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502747470122	Marionette	INFO	Listening on port 41405
+1502747470222	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript error: https://financialplanning.hk.personal-banking.hsbc.com/1/2/!ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gPA0NXA3cLAy8DwzALA08_R_MgI5MAYwsLE_2CbEdFAAvS4_Q!/?forceReAssess=N&URL_REDIRECT_ACTION=UrlRedirectAction&ES_STATE_RESET=ES_STATE_RESET&localeLanguage=en&launchCommand=true&nextPage=hsbc.rtq&__federation=HBAP_AGPL&DATATRANSFER_SITE_ID=PIB_PRD_AGPL~HK~HSBC&TARGET_APPID=AP_HBHK_PIB&continueActionURL=_PIB_SKM_GPL_S~HK~HSBC&TARGET_IDV_MODE=IC&targetLandingPage=RTQ&HSBC_INTG_SITE_ID=PIB_SKM_GPL_S~HK~HSBC, line 2384: SyntaxError: expected expression, got keyword 'else'
+JavaScript error: https://financialplanning.hk.personal-banking.hsbc.com/1/2/!ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gPA0NXA3cLAy8DwzALA08_R_MgI5MAYwsLE6B8pFm8s7ujh4m5j4GBQZinq4GniZOJgamvm6GBpzEB3X4e-bmp-gW5EeUAjxSEiw!!/dl3/d3/L0lDU0lKSmdrS0NsRUpDZ3BSQ1NBL29Ob2dBRUlRaGpFS0lRQUJHY1p3aklDa3FTaFNOQkFOYUEhIS80QzFiOVdfTnIwZ0RFU1pJSlJERVNaTUpRaUlrZmchIS83X0gwMUUwRzgwSjBTRzgwQUxSS0kyREQzMDAyL0F2ZWlxNDMzNTAwMDEvaWJtLmludi8zNjM5OTU4OTAwNDAvb3JnLmFwYWNoZS5teWZhY2VzLnBvcnRsZXQuTXlGYWNlc0dlbmVyaWNQb3J0bGV0LlZJRVdfSUQvJTBncm91cCUwcmlza3Byb2ZpbGVxdWVuYWlyZSUwcnRxJTB2aWV3JTBtZXRob2RvbG9neS5qc3A!/, line 2203: SyntaxError: expected expression, got keyword 'else'
+JavaScript error: https://financialplanning.hk.personal-banking.hsbc.com/1/2/!ut/p/c5/hctZCoMwFEDRtbiC99RU8xutQ0oSrK1D_ZGARZQ6FETR1dcdlPt5uFDB2ajXrtVLN436AyVUTh2jGWBE8YZmTpEr5qYWSWxKyekvp_YjFhNXIGLOA-TEI3iRoYnc_nMXUCKpHz2d5b6U4vDXZ3_cLelqVKLY1JVtsrkmTZ5mHmM7hl8BKp6GN8xDtrbMMH6lM0Uz/dl3/d3/L0lDU0lKSmdwcGlRb0tVUWtnQSEhL29Pb2dBRUlRaGpFQ1VJZ0FJQUl5RkFNaHdVaFM0TFVFQVVvIS80QzFiOVdfTnIwZ0NVZ3hFbVJDVXdpSkg0QSEhLzdfSDAxRTBHODBKMFNHODBBTFJLSTJERDMwMDIvcHZlaXE0MzM1MDAwMy8zNjM5OTU4OTg3NDAvb3JnLmFwYWNoZS5teWZhY2VzLnBvcnRsZXQuTXlGYWNlc0dlbmVyaWNQb3J0bGV0LlZJRVdfSUQvJTBncm91cCUwcmlza3Byb2ZpbGVxdWVuYWlyZSUwcnRxJTB2aWV3JTBSVFEwMDA0JTBxdWVzdGlvbi5qc3A!/, line 2557: SyntaxError: expected expression, got keyword 'else'
+JavaScript error: https://financialplanning.hk.personal-banking.hsbc.com/1/2/!ut/p/c5/hctJDoIwAEbhs3CC_kCFbssg1FCCKOOGNEIIRIYFwcjp5QbmLb88UpOzWe1Dr7ZhmdWblKS2mhC6j4DhBj1nEDG3U4MmJmP09Mpq3ICH1I4A5MKHoA7FRV51CPPPXZAStHmMbJXfrYwOd3-Ox92QtkIcFZ_N46ZsvaTN08zh_OjwskgcLlNH1inbe65pPzLpaYk!/dl3/d3/L0lDU0lKSmdwcGlRb0tVUWtnQSEhL29Pb2dBRUlRaGpFQ1VJZ0FJQUl5RkFNaHdVaFM0TFVFQVVvIS80QzFiOVdfTnIwZ0NVZ3hFbVJDVXdpSkg0QSEhLzdfSDAxRTBHODBKMFNHODBBTFJLSTJERDMwMDIvbXZlaXE0MzM1MDAwOC8zNjM5OTU5MTY2OTkvb3JnLmFwYWNoZS5teWZhY2VzLnBvcnRsZXQuTXlGYWNlc0dlbmVyaWNQb3J0bGV0LlZJRVdfSUQvJTBncm91cCUwcmlza3Byb2ZpbGVxdWVuYWlyZSUwcnRxJTB2aWV3JTBSVFEwMDA0JTBzdW1tYXJ5LmpzcA!!/, line 2557: SyntaxError: expected expression, got keyword 'else'
+JavaScript error: https://financialplanning.hk.personal-banking.hsbc.com/1/2/!ut/p/c5/hctJDoIwAEbhs3CC_kAt3ZZBqIGKyCQb0kRDIDKYEBI5vdzAvOWXRxpyNOmt7_Taz5N-k5o0rI1gBgg5LjBLDqmEk1k0tTmnhz9Y64Uiok4MoJQBJHUpTsnZhLT_3BWpQdv7wJfku9bx7m35sN-sxNFQcQHlX_dV5emzzApXCN9n7ENUNI8vsozF1gnD-AFEvKMZ/dl3/d3/L0lDU0lKSmdwcGlRb0tVUWtnQSEhL29Pb2dBRUlRaGpFQ1VJZ0FJQUl5RkFNaHdVaFM0TFVFQVVvIS80QzFiOVdfTnIwZ0NVZ3hFbVJDVXdpSkg0QSEhLzdfSDAxRTBHODBKMFNHODBBTFJLSTJERDMwMDIvM2ZlaXE0MzM1MDAxNy8zNjM5OTU5MjMzOTgvb3JnLmFwYWNoZS5teWZhY2VzLnBvcnRsZXQuTXlGYWNlc0dlbmVyaWNQb3J0bGV0LlZJRVdfSUQvJTBncm91cCUwcmlza3Byb2ZpbGVxdWVuYWlyZSUwcnRxJTB2aWV3JTBSVFEwMDA0JTBzdW1tYXJ5LmpzcA!!/, line 2557: SyntaxError: expected expression, got keyword 'else'
+JavaScript error: https://financialplanning.hk.personal-banking.hsbc.com/1/2/!ut/p/c5/hctLDoIwAEXRtbCCPqBCpwURqm1FlI9MSBMNgchnQEhk9bIDc4cnl9RkbzRr15qlm0bzIRWpvSaBHSFmOMMuGITmfubQ1GWM7v70mjDmCfUlgEJEEDSgOKiTDeH-uUtSgTb3ns3qu1RyC9dHv90c5RtomUP1xln0MX0VWR7w8CrlRRCdTMObzEO-ttyyfvdZHa8!/dl3/d3/L0lDU0lKSmdwcGlRb0tVUWtnQSEhL29Pb2dBRUlRaGpFQ1VJZ0FJQUl5RkFNaHdVaFM0TFVFQVVvIS80QzFiOVdfTnIwZ0NVZ3hFbVJDVXdpSkg0QSEhLzdfSDAxRTBHODBKMFNHODBBTFJLSTJERDMwMDIvbGZlaXE0MzM1MDAyNi8zNjM5OTU5Mjg4NzEvb3JnLmFwYWNoZS5teWZhY2VzLnBvcnRsZXQuTXlGYWNlc0dlbmVyaWNQb3J0bGV0LlZJRVdfSUQvJTBncm91cCUwcmlza3Byb2ZpbGVxdWVuYWlyZSUwcnRxJTB2aWV3JTBSVFEwMDA0JTBzdW1tYXJ5LmpzcA!!/, line 2557: SyntaxError: expected expression, got keyword 'else'
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+TabSources.prototype._fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:472:19
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+Line: 1281, column: 20
+console.error: 
+  TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+TabSources.prototype._fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:472:19
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+Line: 1281, column: 20
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown in a Promise rejection callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown in a Promise rejection callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown in a Promise rejection callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+TabSources.prototype._fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:472:19
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+Line: 1281, column: 20
+console.error: 
+  TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+TabSources.prototype._fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:472:19
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+Line: 1281, column: 20
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown in a Promise rejection callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+JavaScript error: https://insight.adsrvr.org/track/up?adv=39a6xsk&ref=https%3A%2F%2Fwww.services.online-banking.hsbc.com.hk%2Fgpib%2Fgroup%2Fgpib%2Fcmn%2Flayouts%2Fdefault.html&upid=reivi6b&osi=d542394d89d03851da2087b561d2691c&osv=1.1&upv=1.1.1, line 10: ReferenceError: TTDCM is not defined
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+console.warn: Could not fetch the source for https://static.services.online-banking.hsbc.com.hk/app/dojo/hdx/css/uk_hbuk/fsa-gsp3.css?hk20.5, the editor was destroyed
+console.error: 
+  Message: RangeError: repeat count must be non-negative
+  Stack:
+    prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown in a Promise rejection callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: RangeError: repeat count must be non-negative
+Full stack: prettifyCSS@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/inspector/css-logic.js:285:16
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:276:18
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+
+*************************
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
+console.warn: Could not fetch the source for https://www.hsbc.com.hk/clientapp/hdx/css/uk_hbuk/fsa-pws.css, the editor was destroyed
+console.error: 
+  Message: Error: Connection closed, pending request to server1.conn0.child1/longstractor2050, type substring failed
+
+Request stack:
+Front<.request@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1225:14
+generateRequestMethods/</frontProto[name]@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1363:14
+LongStringFront<.string/promiseRest@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/fronts/string.js:35:16
+LongStringFront<.string@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/fronts/string.js:40:25
+StyleSheetEditor.prototype._getSourceTextAndPrettify/<@resource://devtools/client/styleeditor/StyleSheetEditor.jsm:272:14
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:932:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:813:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:747:11
+permitUnload@chrome://global/content/bindings/remote-browser.xml:352:13
+CanCloseWindow@chrome://browser/content/browser.js:6269:36
+WindowIsClosing@chrome://browser/content/browser.js:6289:7
+onclose@chrome://browser/content/browser.xul:1:8
+
+  Stack:
+    Front<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1172:23
+LongStringFront<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/fronts/string.js:20:5
+Pool<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:819:9
+Front<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1174:5
+StyleSheetFront<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/fronts/stylesheets.js:109:5
+Pool<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:819:9
+Front<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1174:5
+StyleEditorPanel.prototype.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/styleeditor/styleeditor-panel.js:143:7
+Toolbox.prototype.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/toolbox.js:2144:26
+exports.gDevToolsBrowser._forgetBrowserWindow@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/devtools-browser.js:638:9
+exports.gDevToolsBrowser.handleEvent@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/devtools-browser.js:684:9
+
+console.error: 
+  Won't load source editor as the style sheet has already been removed from Style Editor.
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1660"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1660:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._onComplete@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:5
+NetworkResponseListener.prototype.onStreamClose@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:570:7
+NetworkResponseListener.prototype.onInputStreamReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:669:7
+Line: 1660, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1660"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1660:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._onComplete@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:5
+NetworkResponseListener.prototype.onStreamClose@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:570:7
+NetworkResponseListener.prototype.onInputStreamReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:669:7
+Line: 1660, column: 0
+console.error: 
+  Protocol error (noSuchActor): No such actor for ID: server1.conn0.child1/memoryActor12
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1660"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1660:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:488:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype.onStartRequest@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:429:5
+Line: 1660, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1660"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1660:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:488:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype.onStartRequest@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:429:5
+Line: 1660, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1660"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1660:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._onComplete@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:5
+NetworkResponseListener.prototype.onStreamClose@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:578:7
+NetworkResponseListener.prototype.onInputStreamReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:669:7
+Line: 1660, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1660"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1660:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._onComplete@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:5
+NetworkResponseListener.prototype.onStreamClose@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:578:7
+NetworkResponseListener.prototype.onInputStreamReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:669:7
+Line: 1660, column: 0
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x460102,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 71: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://tags.tiqcdn.com/utag/hsbc/hk-rbwm/prod/utag.276.js?utv=ut4.39.201706191035, line 6: ReferenceError: UET is not defined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://tags.tiqcdn.com/utag/hsbc/hk-rbwm/prod/utag.284.js?utv=ut4.39.201706191035, line 14: TypeError: window.google_trackConversion is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4600AC,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x460102,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 71: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x460102,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 71: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x460102,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 71: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0048,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4600AB,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+
+1502749995156	geckodriver	INFO	geckodriver 0.18.0
+1502749995159	geckodriver	INFO	Listening on 127.0.0.1:37289
+1502749996286	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502749996929	Marionette	INFO	Listening on port 46859
+1502749997019	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+1502750126211	geckodriver	INFO	geckodriver 0.18.0
+1502750126214	geckodriver	INFO	Listening on 127.0.0.1:42761
+1502750127318	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502750127939	Marionette	INFO	Listening on port 46045
+1502750128037	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
+1502750241678	geckodriver	INFO	geckodriver 0.18.0
+1502750241680	geckodriver	INFO	Listening on 127.0.0.1:42827
+JavaScript warning: https://www.hsbc.com.hk/clientapp/hdx/layers/pws.js, line 2: unreachable code after return statement
+1502750242868	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
+1502750243940	Marionette	INFO	Listening on port 37793
+1502750244061	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.hsbc.com.hk/clientapp/hdx/layers/pws.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
+1502750389852	geckodriver	INFO	geckodriver 0.18.0
+1502750389855	geckodriver	INFO	Listening on 127.0.0.1:38085
+1502750390974	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502750391613	Marionette	INFO	Listening on port 43173
+1502750391703	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+1502750496132	geckodriver	INFO	geckodriver 0.18.0
+1502750496136	geckodriver	INFO	Listening on 127.0.0.1:35917
+1502750497269	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502750497895	Marionette	INFO	Listening on port 34695
+1502750497983	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+1502750889573	geckodriver	INFO	geckodriver 0.18.0
+1502750889576	geckodriver	INFO	Listening on 127.0.0.1:42095
+1502750890701	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502750891340	Marionette	INFO	Listening on port 44649
+1502750891430	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
+1502751054355	geckodriver	INFO	geckodriver 0.18.0
+1502751054358	geckodriver	INFO	Listening on 127.0.0.1:48017
+JavaScript warning: https://www.hsbc.com.hk/clientapp/hdx/layers/pws.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
+1502751055497	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502751056199	Marionette	INFO	Listening on port 43263
+1502751056287	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
+1502751191239	geckodriver	INFO	geckodriver 0.18.0
+1502751191242	geckodriver	INFO	Listening on 127.0.0.1:39085
+1502751192347	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502751192970	Marionette	INFO	Listening on port 38397
+1502751193059	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1502751437136	geckodriver	INFO	geckodriver 0.18.0
+1502751437139	geckodriver	INFO	Listening on 127.0.0.1:54793
+1502751438254	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502751438886	Marionette	INFO	Listening on port 40395
+1502751438974	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+1502751616734	geckodriver	INFO	geckodriver 0.18.0
+1502751616737	geckodriver	INFO	Listening on 127.0.0.1:38213
+1502751617866	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502751618509	Marionette	INFO	Listening on port 45417
+1502751618598	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+1502751933544	geckodriver	INFO	geckodriver 0.18.0
+1502751933547	geckodriver	INFO	Listening on 127.0.0.1:35385
+1502751934671	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1502751935336	Marionette	INFO	Listening on port 44975
+1502751935425	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.security.online-banking.hsbc.com.hk/gsp/saas/Components/default/resources/script/libraries/dtk/dojo/dojo.js, line 2: unreachable code after return statement
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.hsbc.com.hk/clientapp/hdx/layers/pws.js, line 2: unreachable code after return statement
+JavaScript warning: https://www.hsbc.com.hk/clientapp/node_modules/dojo/dojo.js, line 2: unreachable code after return statement
