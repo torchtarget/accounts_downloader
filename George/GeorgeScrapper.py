@@ -30,7 +30,8 @@ class GeorgeAccount:
         self.account = str(0)
         self.bank_name = "George"
         self.category_map_filename = 'GeorgeCategoryMap.csv'
-
+        self.no_accounts = bank_info['no_accounts']
+        print(self.no_accounts)
         print(self.url)
 
     def opensite(self):
@@ -72,6 +73,7 @@ class GeorgeAccount:
     def __transaction_getstring(self, trans_no=0):
         """Select the transaction string."""
         read_success = False
+        transaction_string = ""
         while(not read_success):
             try:
                 transaction_string = self.browser.find_elements_by_xpath("//*[contains(@id, 'transaction-line-')]")[trans_no].text
@@ -99,14 +101,22 @@ class GeorgeAccount:
     def __parse_transaction(self, transaction_string_list):
         """Return a clearer transaction sting."""
         trans_date = date(2017, self.de_mon_to_num[transaction_string_list[1]], int(transaction_string_list[0]))
+        print("I got here")
+        print("Transaction lenggth is "+str(len(transaction_string_list)))
+
         if(len(transaction_string_list) == 5):
             trans_counterpart = transaction_string_list[2]
             trans_description = transaction_string_list[3]
-            trans_amount = transaction_string_list[4]
+            trans_amount = self.__convert_amount_2_float(transaction_string_list[4])
+        elif(len(transaction_string_list) == 6):
+            print(transaction_string_list)
+            trans_counterpart = transaction_string_list[2]
+            trans_description = transaction_string_list[3]
+            trans_amount = self.__convert_amount_2_float(transaction_string_list[4])
         else:
             trans_counterpart = "Me or Bank"
             trans_description = transaction_string_list[2]
-            trans_amount = transaction_string_list[3]
+            trans_amount =self.__convert_amount_2_float(transaction_string_list[3])
         trans_account = self.bank_name+self.account
 
         trans_categorys = self.__get_category(trans_description)
@@ -118,6 +128,14 @@ class GeorgeAccount:
         trans_FX_curr = "EUR"
         trans_FX_rate = 1.0
         return ([trans_account, trans_date, trans_amount, trans_counterpart, trans_description, trans_memo, trans_category, trans_FX_curr, trans_FX_rate, False, False])
+
+    def __convert_amount_2_float(self, amount_string):
+        amount_string = str(amount_string)
+        if (amount_string[0] == '-'):
+            amount = -1*(float(''.join(re.findall('\d+', str(amount_string))))/100)
+        else:
+            amount = (float(''.join(re.findall('\d+', str(amount_string))))/100)
+        return(amount)
 
     def __check_date(self, transaction_string_list, delta_days=3):
         """Check that the transaction is before a certain date in relation to today."""

@@ -1,20 +1,32 @@
 ##! /usr/bin/python3
 from configobj import ConfigObj
-from selenium import webdriver
+from webdriverwrapper.wrapper import Firefox
 # import Santander.SantanderOpen
+import os
 import George.GeorgeScrapper
 import ICS.ICSScraper
-import sql_transactions
+import HSBC.HSBCScraper
+import sql_transactions as sqlt
 
 
 from forex_python.converter import CurrencyRates
 
-# date and time representation
-
-bank_config = ConfigObj("banks_config.ini")
-saldo_file = bank_config['saldo_file']
-sqlite_file = bank_config['sqlite_file']
-no_days_trans = 4
+def setup_bank(bank_name):
+    """Create bank objects."""
+    no_accounts = int(bank_config['Banks'][bank_name]['Accounts'])
+    if no_accounts > 0:
+        bank_info = get_bank_info(bank_name)
+        print(bank_info)
+        if(bank_name == 'George'):
+            george = George.GeorgeScrapper.GeorgeAccount(browser, bank_info)
+            return(george)
+        elif(bank_name == 'HSBC'):
+            hsbc = HSBC.HSBCScraper.HSBCAccount(bank_info)
+            return(hsbc)
+        elif(bank_name == 'ICS'):
+            ics = ICS.ICSScraper.ICSAccount(bank_info)
+            return(ics)
+    return(None)
 
 
 def get_bank_info(bank_name):
@@ -40,50 +52,48 @@ def get_bank_info(bank_name):
 def output_saldo(account_saldo):
     """Output the balances to a file."""
     # saldo_euro= c.convert(account_saldo["currency"], 'EUR', account_saldo["saldo"])
+    if os.path.exists(saldo_file):
+        append_write = 'a'  # append if already exists
+    else:
+        append_write = 'w'  # make a new file if not
     saldo_euro = 1
-    with open(saldo_file, "a") as output_file:
+    with open(saldo_file, append_write) as output_file:
         output_file.write(account_saldo["bank"]+","+account_saldo["saldo"]+","+account_saldo["currency"]+","+str(saldo_euro)+"\n")
     return
 
 
-santander_open = False
+bank_config = ConfigObj("banks_config.ini")
+saldo_file = bank_config['saldo_file']
+sqlite_file = bank_config['sqlite_file']
+no_days_trans = 15
+sqlt.setdb(sqlite_file)
 c = CurrencyRates()
+bank_list = []
+browser = Firefox()
+sqlt.setdb(sqlite_file)
+sqlt.db.connect
 
-bank_info = get_bank_info('ICS')
-ics = ICS.ICSScraper.ICSBank(bank_info)
-ics_saldo = ics.get_Saldo()
-output_saldo(ics_saldo)
-print(ics_saldo)
-browser = webdriver.Firefox()
-bank_info = get_bank_info('George')
-print(bank_info)
-george = George.GeorgeScrapper.GeorgeAccount(browser, bank_info)
-trans_db = sql_transactions.Accounts_SQL(sqlite_file)
+for bank_name in bank_config['Banks']:
+    bank = setup_bank(bank_name)
+    if(bank is not None):
+        bank_list.append(bank)
 
-
-if (george.opensite()):
+for bank in bank_list:
     i = 0
-    while(i < bank_info['no_accounts']):
-        mysaldo = george.get_Saldo(i)
-        print(mysaldo)
-        output_saldo(mysaldo)
-        trans_list = george.get_transactions(no_days_trans, i)
+    print(bank.no_accounts)
+    bank.opensite()
+    while(i < bank.no_accounts):
+        account_saldo = bank.get_Saldo(i)
+        output_saldo(account_saldo)
+        print(account_saldo)
+        trans_list = bank.get_transactions(no_days_trans, i)
         for trans in trans_list:
-            if(trans_db.match_transaction(trans) is False):
+            print(trans)
+            if(sqlt.match_transaction(trans) is False):
                 print("Transaction not matched _ inserting")
-                trans_db.insert_transaction(trans)
+                sqlt.insert_transaction(trans)
             else:
                 print("Transaction Matched")
         i = i+1
 browser.quit()
-
-
-#with open(saldo_file, "w") as output_file:
-#        output_file.write("Report: " + time.strftime("%c")+"\n")
-
-#santander_open=Santander.SantanderOpen.opensite(browser)
-#if(santander_open):
-#     mysaldo=Santander.SantanderOpen.get_Saldo(browser,0)
-#     output_saldo(mysaldo)
-
-#george_open = George.GeorgeScrapper.opensite(browser)
+quit()

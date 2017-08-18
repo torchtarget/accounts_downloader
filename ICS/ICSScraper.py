@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import requests
 
 
-class ICSBank:
+class ICSAccount:
     """Object gets ICS Data."""
 
     def __init__(self, bank_info):
@@ -19,6 +19,8 @@ class ICSBank:
         loginurl = 'https://www.mijn-icsbusiness.nl/pkmslogin.form'
         trans_url = 'https://www.mijn-icsbusiness.nl/icsbusiness/mijn/alltransactionpayments'
         account_url = 'https://www.mijn-icsbusiness.nl/icsbusiness/mijn/accountoverview'
+        self.no_accounts = bank_info['no_accounts']
+
         with requests.Session() as s:
             p = s.post(loginurl, data=payload)
             self.trans_html = s.get(trans_url)

@@ -17,6 +17,8 @@ class HSBCAccount():
         self.account = str(0)
         self.bank_name = "HSBC"
         self.category_map_filename = 'HSBCCategoryMap.csv'
+        self.no_accounts = bank_info['no_accounts']
+        print(self.no_accounts)
 
     def opensite(self):
         """Open website and place browser on  accounts page."""

@@ -6,3 +6,4 @@ Test2.py
 *.sql
 *saldo.txt
 *.sqlite3
+*.db
