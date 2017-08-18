@@ -11,7 +11,7 @@ from webdriverwrapper.wrapper import Firefox
 # date and time representation
 
 saldo_file = "/tmp/saldo.txt"
-bank_config = ConfigObj("banks_config.ini")
+bank_config = ConfigObj("/home/chris/git/accounts_downloader/banks_config.ini")
 sqlite_file = bank_config['sqlite_file']
 
 
@@ -47,11 +47,14 @@ def output_saldo(account_saldo):
 browser = Firefox()
 
 bank_info = get_bank_info('HSBC')
-#print(bank_info)
+print(bank_info)
 hsbc = HSBC.HSBCScraper.HSBCAccount(browser, bank_info)
-#hsbc.opensite()
-#mysaldo = hsbc.get_Saldo(0)
-#print(mysaldo)
+hsbc.opensite()
+
+mysaldo = hsbc.get_Saldo(0)
+print(mysaldo)
+mytrans=hsbc.get_transactions(3,0)
+print(mytrans)
 #trans_db = sql_transactions.Accounts_SQL(sqlite_file)
 
     #mysaldo = george.get_Saldo(i)

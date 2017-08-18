@@ -33,10 +33,28 @@ class HSBCAccount():
                 self.browser.find_element_by_id(passstring).send_keys(self.password2[i-1])
             i = i+1
         self.browser.find_element_by_css_selector("input.submit_input").click()
-        self.browser.wait_for_element(timeout=60, xpath="//div[@id='hdx_dijits_TitlePane_0_pane']/div/span/span/span[4]").click()
+        
+
+        #self.browser.wait_for_element_show(timeout=60, xpath="//div[@id='hdx_dijits_TitlePane_0_pane']/div/span/span/span[4]").click()
+        test=""
+        i=0
+        while(test == ""):
+            self.browser.wait_for_element_show(timeout=60, xpath="//div[@id='hdx_dijits_TitlePane_0_pane']/div/span/span/span[4]").click()
+            test=self.browser.wait_for_element(xpath="//div[@id='hdx_dijits_TitlePane_0_pane']/div[2]/span[1]/a").text
+            print("test "+test)
+            # Only check 100 times
+            i=i+1
+            if(i == 100):
+                break
+            
+            
+
+        print("Shoudl be open")
 
     def get_Saldo(self, account=0):
         """Get the account Balance."""
+        
+        
         if(account == 0):
             account_saldo_raw = self.browser.wait_for_element(xpath="//div[@id='hdx_dijits_TitlePane_0_pane']/div[2]/span[1]/a").text
         elif(account == 1):
