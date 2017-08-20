@@ -9,7 +9,23 @@ def setdb(db_file):
     global db
     db = pw.SqliteDatabase(db_file)
 
+class Reciepts(pw.Model):  
+    amount = pw.FloatField()
+    counterparty = pw.CharField()
+    description = pw.CharField()
+    memo = pw.CharField()
+    category = pw.CharField()
+    FX_curr = pw.CharField()
+    FX_rate = pw.FloatField()
+    inGC = pw.BooleanField()
+    matched = pw.BooleanField()
+    tag=pw.CharField()
+    transaction_id=pw.IntegerField()
+    
+    class Meta:
+        """Ensure db connection."""
 
+        database = db
 
 class Transaction(pw.Model):
     """Transaction class for DB access."""
@@ -58,7 +74,8 @@ def match_transaction(trans):
 
 
 
-# db.connect()
+db.connect()
+db.create_tables([Reciepts])
 # mytrans = ("HSBC", date(1980, 8, 1), 5, "Helo", "toolate", "Salesteam", "test", "EUR", 1.0, False, False)
 # print(mytrans(0))
 # insert_transaction(mytrans)
