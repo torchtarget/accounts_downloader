@@ -2,13 +2,13 @@
 import peewee as pw
 #from datetime import date
 
+
 db = pw.SqliteDatabase('accounts.db')
 
 
-def setdb(db_file):
-    global db
-    db = pw.SqliteDatabase(db_file)
-
+#def setdb(db_file):
+#    global db
+#    db = pw.SqliteDatabase(db_file)
 
 
 class Transaction(pw.Model):
@@ -23,8 +23,25 @@ class Transaction(pw.Model):
     category = pw.CharField()
     FX_curr = pw.CharField()
     FX_rate = pw.FloatField()
-    inGC = pw.BooleanField
-    matched = pw.BooleanField
+    inGC = pw.BooleanField(default=False)
+    matched = pw.BooleanField(default=False)
+
+    class Meta:
+        """Ensure db connection."""
+
+        database = db
+class Transactionold(pw.Model):
+    """Transaction class for DB access."""
+
+    bank_account = pw.CharField()
+    trans_date = pw.DateField()
+    amount = pw.FloatField()
+    counterparty = pw.CharField()
+    description = pw.CharField()
+    memo = pw.CharField()
+    category = pw.CharField()
+    FX_curr = pw.CharField()
+    FX_rate = pw.FloatField()
 
     class Meta:
         """Ensure db connection."""
@@ -34,7 +51,6 @@ class Transaction(pw.Model):
 
 def insert_transaction(trans):
     """Insert a banking transaction into the database."""
-
     print(trans)
     db_trans = Transaction.create(bank_account=trans[0],
                                   trans_date=trans[1], amount=float(trans[2]),
@@ -57,7 +73,11 @@ def match_transaction(trans):
         return(False)
 
 
-
+db.connect()
+#db.create_tables([Transaction])
+select = Transactionold.select()
+print(select)
+insert = db.insert_from(db.get_columns(Transaction), select)
 # db.connect()
 # mytrans = ("HSBC", date(1980, 8, 1), 5, "Helo", "toolate", "Salesteam", "test", "EUR", 1.0, False, False)
 # print(mytrans(0))
